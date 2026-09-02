@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mgc-lead-scoring"
+version = "0.1.0"
+description = "Honest baseline lead scoring service for MGC Developments"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "catboost>=1.2,<2.0",
+  "fastapi>=0.116,<1.0",
+  "joblib>=1.5,<2.0",
+  "pandas>=2.2,<3.0",
+  "pydantic>=2.11,<3.0",
+  "scikit-learn>=1.8,<2.0",
+  "uvicorn[standard]>=0.35,<1.0",
+  "xgboost>=3.0,<4.0",
+]
+
+[project.scripts]
+train-model = "mgc_lead_scoring.train:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mgc_lead_scoring"]

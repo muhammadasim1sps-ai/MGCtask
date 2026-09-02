@@ -1,0 +1,22 @@
+# Next.js / Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local environment and credentials
+.env
+.env.local
+
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
