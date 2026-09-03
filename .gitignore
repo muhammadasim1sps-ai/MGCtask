@@ -12,7 +12,7 @@ __pycache__/
 .ruff_cache/
 
 # Local environment and credentials
-.env
+
 .env.local
 
 
